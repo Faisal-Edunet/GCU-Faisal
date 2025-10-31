@@ -9,7 +9,9 @@
     
     <form action="">
       
-        <input type="text" name="" id="phone"  onkeyup="validatePhone()" >
+        phone No<input type="text" name="" id="phone"  onkeyup="validatePhone()" >
+        <br>
+        Name <input type="text" name="" id="name">
         <br>
         <input type="Submit" value="Submit">
 
@@ -20,7 +22,7 @@
         {
             obj_phno = document.getElementById("phone");
             phno = obj_phno.value;
-
+            obj_phno.style.borderWidth="6px";
             const regexphno = /^[6-9]{1}[0-9]{9}$/;
 
             if(regexphno.test(phno))

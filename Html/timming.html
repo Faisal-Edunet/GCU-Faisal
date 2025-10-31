@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirect Demo</title>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Redirecting Demo</h2>
+    <p>Click the button to redirect to <strong>index.html</strong> after 5 seconds.</p>
+    <button onclick="startRedirect()">Start Redirect</button>
+    <div id="countdown"></div>
+  </div>
+
+  <script>
+    function startRedirect() {
+      let seconds = 7 ;
+      const countdownEl = document.getElementById("countdown");
+
+      countdownEl.innerText = `Redirecting in ${seconds} seconds...`;
+
+      const intervalId = setInterval(() => {
+        seconds--;
+        countdownEl.innerHTML = `Redirecting in ${seconds} seconds...`;
+        if (seconds <= 0) {
+          clearInterval(intervalId);
+        }
+      }, 1000);
+
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 1000*seconds);
+    }
+  </script>
+</body>
+</html>
