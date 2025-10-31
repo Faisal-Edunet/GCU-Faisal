@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+      
+        <input type="text" name="" id="phone"  onkeyup="validatePhone()" >
+        <br>
+        <input type="Submit" value="Submit">
+
+    </form>
+
+    <script>
+        function validatePhone()
+        {
+            obj_phno = document.getElementById("phone");
+            phno = obj_phno.value;
+
+            const regexphno = /^[6-9]{1}[0-9]{9}$/;
+
+            if(regexphno.test(phno))
+        {
+            // change border to green
+            // obj_phno.style.color = "green";
+            obj_phno.style.borderColor = "green";
+            
+        }
+        else
+        {
+            obj_phno.style.borderColor = "red";
+            //  obj_phno.style.color = "red";
+        }
+
+
+
+            
+
+        }
+        
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Number 1 : <input type="text" class="tb" id="num1">
+    <br>
+    <br>
+    Number 2 : <input type="text" class="tb" id="num2">
+    <br>
+    <br>
+    <input type="submit" value="ADD" onclick="add_two()">
+    <input type="submit" value="CLEAR" onclick="clearFields()">
+
+
+    <br>
+    <br>
+    <input type="text" class="tb"  id="result" disabled>
+    <h1 id="h1"></h1>
+
+
+
+
+    <script>
+        function add_two() {
+
+            obj_num1 = document.getElementById("num1");
+            data_num1 = parseInt(obj_num1.value);
+
+            obj_num2 = document.getElementById("num2");
+            data_num2 = parseInt(obj_num2.value);
+            // console.log(data_num1 + data_num2);
+
+            obj_res = document.getElementById('result');
+            obj_res.value = data_num1 + data_num2;
+
+            document.getElementById('h1').innerText = "Hello everyone";
+
+        }
+
+        function clearFields() {
+
+            const inputs = document.getElementsByClassName('tb');
+            for (let i = 0; i < inputs.length; i++) {
+               
+                    inputs[i].value = '';
+                    inputs[i].style.backgroundColor = "green";
+                
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function withIF() {
+            // debugger;
+            let dayno = 5;
+            if (dayno == 1) {
+                console.log("Monday");
+
+            }
+            else if (dayno == 2) {
+                console.log("Tuesday");
+            }
+            else if (dayno == 3) {
+                console.log("Wednesday");
+            }
+            else if (dayno == 4) {
+                console.log("Thursday");
+            }
+            else if (dayno == 5) {
+                console.log("Friday");
+            }
+            else if (dayno == 6) {
+                console.log("Saturday");
+            }
+            else if (dayno == 7) {
+                console.log("Sunday");
+            }
+            else {
+                console.log("Invalid Day");
+            }
+        }
+
+        function withSwitch() {
+            debugger;
+            let dayNo = 5;
+            switch (dayNo) {
+                case 1: console.log("Monday");
+                    break;
+                case 2: console.log("Tuesday");
+                    break;
+                case 3: console.log("Wednesday");
+                    break;
+                case 4: console.log("Thursday");
+                    break;
+                case 5: console.log("Friday");
+                    break;
+                case 6: console.log("Saturday");
+                    break;
+                case 7: console.log("Sunday");
+                    break;
+
+            }
+        }
+
+
+        withSwitch()
+
+    </script>
+
+</body>
+
+</html>

@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS Translate Example</title>
+
+
+</head>
+<body>
+  <h2>Translate Example</h2>
+  <div class="box"></div>
+  <p>Hover the box to see it shift <b>50px right</b> and <b>30px down</b>.</p>
   <style>
     body { text-align: center; font-family: Arial; }
     .box {
-      /* width: 150px; height: 150px;
+      width: 150px; height: 150px;
       margin: 50px auto;
-      background: lightblue; */
+      background: lightblue;
       border: 2px solid navy;
       transition: transform 0.5s;
     }
@@ -16,14 +23,8 @@
         /* transform: translate(50px, 30px); */
       /* transform: rotate(90deg); */
  /* transform: scale(1.4, 1.2); */
- /* transform: skew(15deg, 10deg); */
+ transform: skew(15deg, 10deg);
     }
   </style>
-</head>
-<body>
-  <h2>Translate Example</h2>
-  <div class="box"></div>
-  <p>Hover the box to see it shift <b>50px right</b> and <b>30px down</b>.</p>
-    <button class="box"> CLICK HERE</button>
 </body>
 </html>
